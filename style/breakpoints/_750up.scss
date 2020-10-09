@@ -1,98 +1,49 @@
 body{
-    background-color: $cOrange;
+    background-image: url(../img/diamond_upholstery.png);
 }
 
 p{
     font-size: 1.2rem;
 }
 
-@mixin  h2_size {
-    width: 20rem;
-    height: 4rem;
-}
-
-#work h2 , #process h2 , #news h2 , #contact h2{
-    @include h2_size;
-}
-
-header{
-    display: flex;
-    position: relative;
-    max-width: 1280px;
-    background-color: $cWhite;
-    margin: auto;
-
-    .inner{
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-    }
-
-.nav_btn{
-    display: none;
-}
-
-.nav_global{
-    display: flex;
-
-    .tel{
-        margin-top: 6px;
-        margin-right: 3rem;
-    }
-
-    li{
-        font-size: 1.2rem;
-        margin-right: 3rem;
-    }
-
-    p:nth-of-type(2){
-        color: $cOrange;
-        font-size: 3rem;
-    }
-}
-}
-
 .all_container{
-    max-width: 1280px;
+    max-width: 750px;
     margin: auto;
     top:initial;
     background-color: $cWhite;
 }
 
 .hero{
-    height: 770px;
-
+    height: 45rem;
     .hero_img{
     background-image: url(../img/hero_pc.png);
     }
 }
 
-.corona{
-    a{
-    font-size: 1.6rem;
+#about {
+    h2{
+        font-size: 2.2rem;
+    }
+
+    .con_text{
+        margin: 4rem auto;
+    }
+
+    a.btn-gradient{
+        border-radius: 6rem;
     }
 }
 
-    .flex{
-        display: flex;
-        flex-wrap: wrap;
-        align-items: center;
+#about .btn, #about a.btn, #about button.btn{
+    font-size: 2.8rem;
+    padding: 3rem 15rem;
+}
 
-        .work_con{
-            margin: 2rem;
-            width: 46.8%;
-        }
-    }
 
-    .column_flex{
-    display: flex;
-    justify-content: space-around;
+#work{
+    h3{
+        background-size: 59rem;
+        width: 59rem;
+        height: 40rem;
     }
-
-    .column_01{
-        margin: 0 auto;
-    }
-
-    .column_02{
-        margin: 0 auto;
-    }
+}
